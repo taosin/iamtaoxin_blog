@@ -8,6 +8,9 @@ class App extends Component {
     return (
       <div className="App">
         <Home></Home>
+        <Switch>
+        <Route path="/home" exact component={Home} />
+        </Switch>
       </div>
     );
   }
