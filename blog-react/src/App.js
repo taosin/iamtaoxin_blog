@@ -1,19 +1,13 @@
-import React, { Component } from 'react';
-
-import { Button } from 'antd';
-
-import './App.css';
-
+import React, { Component } from "react";
+import { Route, Switch, Router, Link } from 'react-router-dom';
+import { Button } from "antd";
+import "./App.css";
+import Home from './Pages/Home/home'
 class App extends Component {
   render() {
     return (
       <div className="App">
-          <div>
-            <Button type="primary">Primary</Button>
-            <Button>Default</Button>
-            <Button type="dashed">Dashed</Button>
-            <Button type="danger">Danger</Button>
-          </div>
+        <Home></Home>
       </div>
     );
   }
